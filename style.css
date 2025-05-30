@@ -1,0 +1,113 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #20462a, #4a6a43); /* gradiente mais suave como na imagem */
+  color: #fff;
+}
+
+.container {
+  max-width: 400px; /* largura menor que 500 para ficar mais parecido */
+  width: 90%; /* responsivo */
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+
+  flex: 1;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #ffffffaa;
+}
+
+.profile-pic {
+  width: 80px;  /* menor que antes */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #dddddd;
+  margin-bottom: 25px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.btn {
+  background: #fff;
+  color: #2c4c30;  /* tom verde escuro */
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  position: relative;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  text-align: center;
+}
+
+.btn::after {
+  content: '⋮';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 20px 0 8px;
+  text-transform: uppercase;
+  color: #ffffffdd;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  color: #fff;
+  background-color: #123;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
