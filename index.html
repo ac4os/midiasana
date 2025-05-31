@@ -12,13 +12,32 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
+<script>
+  const profileLink = document.getElementById('profile-link');
+  const profilePic = profileLink.querySelector('.profile-pic');
+
+  profileLink.addEventListener('click', function(e) {
+    e.preventDefault(); // impede abrir imediatamente
+    profilePic.classList.add('spin3d');
+
+    setTimeout(() => {
+      window.open(profileLink.href, '_blank');
+      profilePic.classList.remove('spin3d');
+    }, 800); // tempo igual ao da animação
+  });
+</script>
+
 <body>
   <div class="container">
     <div class="menu-icon">
       <i class="fas fa-ellipsis-h"></i>
     </div>
 
-    <img src="ana.png" alt="Foto de Perfil" class="profile-pic" />
+      <a href="https://www.instagram.com/midias.ana/" target="_blank" rel="noopener noreferrer" id="profile-link">
+        <img src="ana.png" alt="Foto de Perfil" class="profile-pic" />
+      </a>
+
 
     <h1>Ana | Social Media & Designer</h1>
     <p class="subtitle">Identidade visual, estratégia, consultoria,<br>gestão e criação de conteúdos</p>
