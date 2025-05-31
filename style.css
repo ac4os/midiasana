@@ -38,7 +38,6 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 15px auto;  /* centraliza horizontalmente e dá margem inferior */
-  border: 3px solid #fff;
   display: block; /* necessário para centralizar com margin auto */
 }
 
