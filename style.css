@@ -1,36 +1,39 @@
 html, body {
   height: 100%;
   margin: 0;
+  background: linear-gradient(to bottom, #0f3122, #1B4F3A);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 10vh;
-
+  min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0f3122, #1B4F3A);
   color: #fff;
 }
 
 .container {
   max-width: 576px;
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
   position: relative;
-
   flex: 1;
+  box-sizing: border-box;
 }
 
 .menu-icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #ffffffaa;
+  cursor: pointer;
 }
 
 .profile-pic {
@@ -38,19 +41,18 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 15px auto;  /* centraliza horizontalmente e dá margem inferior */
-  
-  display: block; /* necessário para centralizar com margin auto */
+  margin: 0 auto 15px;
+  display: block;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 6px;
 }
 
 .subtitle {
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 1.4;
   color: #dddddd;
   margin-bottom: 25px;
@@ -76,9 +78,9 @@ h1 {
   transform: scale(1);
   text-align: center;
   width: 100%;
-  box-sizing: border-box; /* para respeitar o padding dentro da largura */
+  box-sizing: border-box;
+  font-size: 1rem;
 }
-
 
 .btn::after {
   content: '⋮';
@@ -87,7 +89,7 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   color: #888;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .btn:hover {
@@ -102,7 +104,7 @@ h1 {
 
 .section-title {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.8rem;
   margin: 20px 0 8px;
   text-transform: uppercase;
   color: #ffffffdd;
@@ -110,14 +112,16 @@ h1 {
 
 footer {
   text-align: center;
-  margin-top: 30px;
-  padding: 15px;
+  padding: 15px 10px;
   color: #fff;
   background-color: #123;
-  font-size: 14px;
+  font-size: 0.875rem;
   border-top: 1px solid #444;
+  box-sizing: border-box;
+  width: 100%;
 }
 
+/* Animação */
 @keyframes spin3d {
   0% {
     transform: rotateY(0deg);
@@ -131,4 +135,90 @@ footer {
   animation: spin3d 0.8s ease-in-out;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .btn::after {
+    font-size: 1rem;
+    right: 10px;
+  }
+
+  .menu-icon {
+    font-size: 1.1rem;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 35px 18px;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 13px 18px;
+    font-size: 1rem;
+  }
+
+  .btn::after {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 576px;
+    padding: 40px 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
 }
