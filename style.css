@@ -9,13 +9,13 @@ body {
   min-height: 100vh;
 
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #163323, #4a6a43); /* gradiente mais suave como na imagem */
+  background: linear-gradient(to bottom, #163323, #4a6a43);
   color: #fff;
 }
 
 .container {
-  max-width: 400px; /* largura menor que 500 para ficar mais parecido */
-  width: 90%; /* responsivo */
+  max-width: 400px;
+  width: 90%;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
@@ -33,12 +33,13 @@ body {
 }
 
 .profile-pic {
-  width: 120px;  /* menor que antes */
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;  /* centraliza horizontalmente e dá margem inferior */
   border: 3px solid #fff;
+  display: block; /* necessário para centralizar com margin auto */
 }
 
 h1 {
@@ -62,7 +63,7 @@ h1 {
 
 .btn {
   background: #fff;
-  color: #1C3E2B;  /* tom verde escuro */
+  color: #1C3E2B;
   text-decoration: none;
   padding: 14px 44px;
   border-radius: 8px;
@@ -111,6 +112,7 @@ footer {
   font-size: 14px;
   border-top: 1px solid #444;
 }
+
 @keyframes spin3d {
   0% {
     transform: rotateY(0deg);
