@@ -7,6 +7,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://via.placeholder.com; script-src 'self' https://kit.fontawesome.com; style-src 'self' 'unsafe-inline';">
+
   <!-- Open Graph (para WhatsApp, Facebook, etc) -->
   <meta property="og:title" content="Ana | Social Media & Designer">
   <meta property="og:description" content="Identidade visual, consultoria, gestão e conteúdos criativos para seu negócio.">
@@ -20,12 +21,10 @@
   <meta name="twitter:description" content="Consultoria, identidade visual e conteúdo com estratégia.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/ac4os/midiasana/main/icon1.png">
 
-
   <title>Ana | Social Media</title>
   <link rel="icon" href="icon1.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
 </head>
 
 <script>
@@ -33,13 +32,13 @@
   const profilePic = profileLink.querySelector('.profile-pic');
 
   profileLink.addEventListener('click', function(e) {
-    e.preventDefault(); // impede abrir imediatamente
+    e.preventDefault();
     profilePic.classList.add('spin3d');
 
     setTimeout(() => {
       window.open(profileLink.href, '_blank');
       profilePic.classList.remove('spin3d');
-    }, 800); // tempo igual ao da animação
+    }, 800);
   });
 </script>
 
@@ -49,10 +48,11 @@
       <i class="fas fa-ellipsis-h"></i>
     </div>
 
-      <a href="https://www.instagram.com/midias.ana/" target="_blank" rel="noopener noreferrer" id="profile-link">
-        <img src="ana.png" alt="Foto de Perfil" class="profile-pic" />
-      </a>
-    
+    <a href="https://www.instagram.com/midias.ana/" target="_blank" rel="noopener noreferrer" id="profile-link">
+      <img src="ana.png" alt="Foto de Perfil" class="profile-pic" />
+    </a>
+
+    <!-- TÍTULO CLICÁVEL COM ÍCONES -->
     <h1>
       <a href="https://www.instagram.com/midias.ana/" target="_blank" style="text-decoration: none; color: inherit;">
         <i class="fab fa-instagram"></i>
@@ -60,11 +60,10 @@
         <i class="fab fa-instagram"></i>
       </a>
     </h1>
-    
+
     <p class="subtitle">Identidade visual, estratégia, consultoria,<br>gestão e criação de conteúdos</p>
 
-        <div class="button-container">
-
+    <div class="button-container">
       <a href="https://api.whatsapp.com/send/?phone=5527998638625&text=Ol%C3%A1+Ana%2C+estou+vindo+atrav%C3%A9s+do+Instagram.&type=phone_number&app_absent=0" class="btn" target="_blank" rel="noopener noreferrer">Contato Whatsapp</a>
 
       <p class="section-title">Informações e orçamentos:</p>
@@ -79,10 +78,17 @@
 
       <a href="https://wa.me/5527998638625?text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20Instagram%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20seu%20servi%C3%A7o%20de%20produ%C3%A7%C3%A3o%20de%20*Conte%C3%BAdos%20Digitais*" class="btn" target="_blank" rel="noopener noreferrer">Conteúdos Digitais</a>
 
+      <a href="https://wa.me/5527998638625?text=Ol%C3%A1%2C%20estou%20vindo%20atrav%C3%A9s%20do%20Instagram%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20seu%20servi%C3%A7o%20de%20produ%C3%A7%C3%A3o%20de%20*Conte%C3%BAdos%20Digitais*" class="btn" target="_blank" rel="noopener noreferrer">Captação de Conteúdo</a>
+
       <p class="section-title">QUER FACILITAR SEU PLANEJAMENTO?</p>
 
       <a href="https://drive.google.com/drive/folders/1kqD854c_igNjE1_Hzt4ySzccwypD7q1I" class="btn" target="_blank" rel="noopener noreferrer">Material para seu planejamento</a>
     </div>
+      <div style="text-align: center; margin-top: 30px;">
+  <a href="https://www.instagram.com/midias.ana/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
+    <img src="ig3.png" alt="Instagram" style="width: 44px; height: 44px; margin-bottom: 10px;">
+  </a>
+</div>
   </div>
 
   <footer style="text-align:center; margin-top:30px; padding:15px; color:#fff; background-color:#123; font-size:14px; border-top: 1px solid #444;">
