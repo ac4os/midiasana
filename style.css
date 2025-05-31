@@ -111,3 +111,17 @@ footer {
   font-size: 14px;
   border-top: 1px solid #444;
 }
+@keyframes spin3d {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.profile-pic.spin3d {
+  animation: spin3d 0.8s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
