@@ -14,7 +14,8 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 576px;
+  margin: 0 auto;
   width: 90%;
   margin: 0 auto;
   padding: 40px 20px;
@@ -38,6 +39,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 15px auto;  /* centraliza horizontalmente e dá margem inferior */
+  
   display: block; /* necessário para centralizar com margin auto */
 }
 
@@ -65,7 +67,7 @@ h1 {
   background: #fff;
   color: #1C3E2B;
   text-decoration: none;
-  padding: 14px 44px;
+  padding: 14px 20px;
   border-radius: 8px;
   font-weight: 500;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -73,7 +75,10 @@ h1 {
   transition: all 0.3s ease;
   transform: scale(1);
   text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* para respeitar o padding dentro da largura */
 }
+
 
 .btn::after {
   content: '⋮';
